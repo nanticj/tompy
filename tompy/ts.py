@@ -1,9 +1,4 @@
-# Standard Library
 import datetime
-
-# Public Library
-
-# Private Library
 
 
 def date(year: int, month: int, day: int) -> datetime.date:
@@ -26,7 +21,7 @@ def date_add(d: datetime.date, days: int) -> datetime.date:
 
 def date_weekday(d: datetime.date) -> int:
     """
-    Return the day of the week as an integer, where Monday is 0 and Sunday is 6.
+    Return the day of the week as an integer, Monday is 0 and Sunday is 6.
     """
     return d.weekday()
 
@@ -49,5 +44,7 @@ def datetime_today() -> datetime.datetime:
     return datetime.datetime.today()
 
 
-def datetime_from_str(datestr: str, fmt: str = "%Y-%m-%d") -> datetime.datetime:
+def datetime_from_str(
+    datestr: str, fmt: str = "%Y-%m-%d"
+) -> datetime.datetime:
     return datetime.datetime.strptime(datestr, fmt)
