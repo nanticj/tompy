@@ -6,3 +6,4 @@ set -x
 isort tompy tests
 black tompy tests
 mypy tompy
+flake8 tompy
