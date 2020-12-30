@@ -1,5 +1,7 @@
 import datetime
 
+import pandas as pd
+
 
 def date(year: int, month: int, day: int) -> datetime.date:
     return datetime.date(year, month, day)
@@ -48,3 +50,7 @@ def datetime_from_str(
     datestr: str, fmt: str = "%Y-%m-%d"
 ) -> datetime.datetime:
     return datetime.datetime.strptime(datestr, fmt)
+
+
+def df_drop_weekends(df: pd.DataFrame) -> pd.DataFrame:
+    return df[df.index.dayofweek < 5]
