@@ -5,4 +5,5 @@ set -x
 
 isort tompy tests
 black tompy tests
-mypy tompy
+mypy tompy tests
+pylint tompy tests
