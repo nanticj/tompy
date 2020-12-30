@@ -3,4 +3,4 @@
 set -e
 set -x
 
-pytest --cov=tompy --cov=tests --cov-report=term-missing --cov-report=xml --cov-report=html
+pytest --cov=tompy --cov=tests --cov-report=term-missing --cov-report=xml
