@@ -28,6 +28,10 @@ def date_weekday(d: datetime.date) -> int:
     return d.weekday()
 
 
+def date_is_weekend(d: datetime.date) -> bool:
+    return date_weekday(d) > 4
+
+
 def date_str(d: datetime.date) -> str:
     """
     Return a string representing the date in ISO 8601 format, YYYY-MM-DD.
